@@ -1,0 +1,21 @@
+{
+  "name": "genpark-personal-agent-microbiome-fiber-diversity-index-skill",
+  "version": "1.0.0",
+  "description": "Audits 7-day dietary plant species diversity, models Shannon-Wiener prebiotic entropy, estimates colonic SCFA butyrate production, and tracks the 30-plant weekly quota.",
+  "tools": [
+    {
+      "name": "calculate_fiber_diversity_index",
+      "description": "Audits 7-day plant species count, Shannon diversity H', and SCFA butyrate tier.",
+      "parameters": {
+        "consumed_plant_species": "list of strings (plant names)"
+      }
+    },
+    {
+      "name": "recommend_microbiome_substrate_additions",
+      "description": "Recommends high-leverage prebiotic plant substrates to hit the 30-plant weekly quota.",
+      "parameters": {
+        "consumed_plant_species": "list of strings (currently consumed plants)"
+      }
+    }
+  ]
+}
